@@ -11,7 +11,7 @@
     /* Estilo para el fondo negro */
     body {
       background-color: black;
-      color: white; /* Cambiar el color del texto a blanco para que sea legible */
+      color: white; 
       font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
     }
 
@@ -19,23 +19,56 @@
     .footer a {
       color: red; /* Cambiar el color del enlace a rojo */
     }
+    
+    /* Estilo para los contenedores de los divs blancos */
+    .white-div-container {
+      display: flex;
+      justify-content: space-between; /* Separar los divs horizontalmente */
+      margin-top: 30px; /* Aumenta el espacio entre "Mi Instagram" y los divs */
+    }
 
+    /* Estilo para los divs blancos */
+    .white-div {
+      background-color: white;
+      width: 500px; /* Ancho de cada div en píxeles (ajusta según tus necesidades) */
+      padding: 15px;
+      border: 5px solid rgb(153, 153, 153); /* Borde opcional */
+      margin-right: 20px; /* Separación entre los divs */
+      white-space: nowrap; /* Evitar que las palabras se dividan en varias líneas */
+      overflow: hidden; /* Ocultar el contenido que desborda */
+      text-overflow: ellipsis; /* Mostrar puntos suspensivos cuando el contenido desborda */
+    }
 
   </style>
 </head>
 <body>
   <main>
-    <h1 style="color: #FF0000;">Cambio para ver si jala, 2do intento</h1>
-    <Br></br>
+    <h1 style="color: #FF0000;">Bienvenido!</h1>
     <div class="avatar">
       <img src="/assets/avatar.jpg" class="avatar-img" />
     </div>
     <h1 style="color: #FF0000;">This is Dani Ald</h1>
-    
-    
-
     <div class="divider"></div>
-    <footer style="color: #FFFFFF;", class="footer">Mi Instagram <a href="https://instagram.com/this_is_dani_ald._.l?igshid=MzRlODBiNWFlZA==">this_is_dani_ald._.l</a></footer>
+    <footer style="color: #ffffff;", class="footer">Mi Instagram <a href="https://instagram.com/this_is_dani_ald._.l?igshid=MzRlODBiNWFlZA==">this_is_dani_ald._.l</a></footer>
+ 
+  <!-- Contenedor para los divs blancos -->
+  <div class="white-div-container">
+    <!-- Div "Intereses" -->
+    <div class="white-div">
+      <center><h2 style="color: #FF0000;">Intereses</h2></center>
+      <p>Aquí puedes escribir información sobre tus intereses.</p>
+    </div>
+    <!-- Div "Gustos" -->
+    <div class="white-div">
+      <center><h2 style="color: #FF0000;">Gustos</h2></center>
+      <p>Comparte tus gustos y preferencias en esta sección.</p>
+    </div>
+    <!-- Div "Actualidad" -->
+    <div class="white-div">
+      <center><h2 style="color: #FF0000;">Metas</h2></center>
+      <p>Mantén a tus seguidores al tanto de tus actividades recientes.</p>
+    </div>
+  </div>
   </main>
 </body>
 </html>
